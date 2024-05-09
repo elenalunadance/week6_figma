@@ -176,10 +176,12 @@ body {
     height: 334px;
     border-radius: 8px;
     background: #2b6f3e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 4rem 4rem 4rem;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
     align-self: center;
     gap: 2rem;
 }
