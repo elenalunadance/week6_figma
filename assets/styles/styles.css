@@ -14,8 +14,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 800px 1fr 1fr 1fr 1fr 1fr 84px;
-    grid-template-columns: 1fr;
+    grid-template-rows: 800px 1fr 1fr 1fr 1fr 84px;
     gap: 1rem;
     height: 100%;
     justify-items: center;
@@ -33,11 +32,12 @@ body {
 }
 
 .menu {
-    display: flex;
-    justify-content: right;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: end;
     list-style: none;
     margin: 1rem;
-    width: 1180px;
+    width: 90%;
     padding-left: 0;
 }
 
@@ -46,7 +46,7 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
     color: #fff;
 }
@@ -54,20 +54,23 @@ body {
 .trevel {
     font-family: "Pacifico", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
-    padding-right: 500px;
+    text-decoration: none;
+    padding-right: 18rem;
+    padding-left: 10rem;
     color: #fff;
-
 }
 
 .main {
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 3rem 4rem 4rem 4rem;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .explore {
@@ -86,17 +89,19 @@ body {
 }
 
 .icons {
-    display: flex;
+    display: grid;
     margin-top: 2rem;
     color: white;
-    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    justify-self: center;
 }
 
 .section-1 {
     grid-row: 2/3;
     grid-column: 1/2;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -175,6 +180,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: 2rem;
 }
 
